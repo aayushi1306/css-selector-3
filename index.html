@@ -10,30 +10,48 @@
             width: 200px;
             height: 200px;
             background:blueviolet;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
         }
         span#a1{
             display:block;
             width: 200px;
             height: 200px;
             background:crimson;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
         }
         span.b1{
             display:block;
             width:200px;
             height: 200px;
             background:darkred;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
         }
         a[href="https://oklabs.in"]{
             display: block;
             width: 200px;
             height: 200px;
             background:deeppink;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
         }
         *{
             border: 10px solid #000;
         }
         div,span#a1,span.b1,a[href="https://oklabs.in"]{
             display: inline-block;
+        }
+        h1::after{
+            content:URL('https://www.google.com/imgres?imgurl=http%3A%2F%2Fclipart-library.com%2Fimages%2FpiqrxdR5T.gif&imgrefurl=http%3A%2F%2Fclipart-library.com%2Fvery-good-smiley-gif.html&tbnid=2vJC7Y0eqb29vM&vet=12ahUKEwiT7pjnhKzyAhVJMCsKHRM4AGYQMygWegUIARCmAg..i&docid=xIZOqfsl4IqQgM&w=350&h=350&q=animated%20smiley%20gif&ved=2ahUKEwiT7pjnhKzyAhVJMCsKHRM4AGYQMygWegUIARCmAg');
+        }
+        div#c1:hover{
+            background:gold;
         }
     </style>
 </head>
@@ -42,5 +60,7 @@
     <span id="a1">CSS Id Selector</span>
     <span class="b1"> CSS Class Selector</span>
     <a href="https://oklabs.in">CSS Attribute Selector</a>
+    <h1>CSS Pesudo Element Selector  ::</h1>
+    <div id="c1"> CSS Pesudo Class Element</div>
 </body>
 </html>
